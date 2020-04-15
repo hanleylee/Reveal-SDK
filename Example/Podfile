@@ -1,0 +1,6 @@
+use_frameworks!
+target 'Reveal-SDK_Tests' do
+  pod 'Reveal-SDK', :path => '../'
+  
+  
+end
