@@ -1,42 +1,32 @@
-#
-# Be sure to run `pod lib lint Reveal-SDK.podspec' to ensure this is a
-# valid spec before submitting.
-#
-# Any lines starting with a # are optional, but their use is encouraged
-# To learn more about a Podspec see https://guides.cocoapods.org/syntax/podspec.html
-#
-
-Pod::Spec.new do |s|
-  s.name             = 'Reveal-SDK'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of Reveal-SDK.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
-
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
-
-  s.homepage         = 'https://github.com/yidahis/Reveal-SDK'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
-  s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'yidahis' => 'yidahis@gmail.com' }
-  s.source           = { :git => 'https://github.com/yidahis/Reveal-SDK.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-
-  s.ios.deployment_target = '8.0'
-
-  s.source_files = 'Reveal-SDK/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'Reveal-SDK' => ['Reveal-SDK/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
-end
+{
+  "name": "Reveal-SDK",
+  "version": "24",
+  "summary": "The Reveal SDK: Runtime view debugging for iOS & tvOS apps & extensions.",
+  "description": "Reveal brings powerful runtime view debugging to iOS developers.\nPlease visit our website for more details: http://revealapp.com/",
+  "homepage": "https://revealapp.com/",
+  "license": "Commercial",
+  "screenshots": "https://github.com/yidahis/Reveal-SDK",
+  "social_media_url": "https://twitter.com/reveal_app",
+  "authors": "Itty Bitty Apps Pty Ltd",
+  "source": {
+    "http": "git@github.com:yidahis/Reveal-SDK.git"
+  },
+  "platforms": {
+    "ios": "8.0",
+    "tvos": "9.0"
+  },
+  "requires_arc": false,
+  "compiler_flags": "-ObjC",
+  "frameworks": [
+    "CoreGraphics",
+    "CFNetwork",
+    "QuartzCore"
+  ],
+  "libraries": "z",
+  "ios": {
+    "vendored_frameworks": "RevealServer/Framework/RevealServer.framework"
+  },
+  "xcconfig": {
+    "LD_RUNPATH_SEARCH_PATHS": "$(inherited) @executable_path/Frameworks @loader_path/Frameworks"
+  }
+}

@@ -1,0 +1,16 @@
+PODS:
+  - Reveal-SDK (0.1.0)
+
+DEPENDENCIES:
+  - Reveal-SDK (from `../`)
+
+EXTERNAL SOURCES:
+  Reveal-SDK:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Reveal-SDK: 6e7b627e887b8587639b501fce7c43e20dbbd8d9
+
+PODFILE CHECKSUM: 6fb5d88b26077ec2b58dc6eb86902c503d189871
+
+COCOAPODS: 1.9.1
