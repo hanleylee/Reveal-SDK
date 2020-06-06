@@ -17,7 +17,7 @@ Reveal-SDK is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'Reveal-SDK'
+pod 'Reveal-SDK',:git =>"https://github.com/yidahis/Reveal-SDK.git", :configurations => ['Debug']
 ```
 
 ## Author
