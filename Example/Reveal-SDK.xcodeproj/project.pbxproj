@@ -214,11 +214,11 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Reveal-SDK_Tests/Pods-Reveal-SDK_Tests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Reveal-SDK/Reveal_SDK.framework",
+				"${PODS_ROOT}/../../Reveal-SDK/Framework/RevealServer.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reveal_SDK.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RevealServer.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

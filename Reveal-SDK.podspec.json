@@ -5,15 +5,14 @@
   "description": "Reveal brings powerful runtime view debugging to iOS developers.\nPlease visit our website for more details: http://revealapp.com/",
   "homepage": "https://revealapp.com/",
   "license": "Commercial",
-  "screenshots": "https://github.com/yidahis/Reveal-SDK",
+  "screenshots": "https://github.com/hanleylee/Reveal-SDK",
   "social_media_url": "https://twitter.com/reveal_app",
   "authors": "Itty Bitty Apps Pty Ltd",
   "source": {
-    "http": "git@github.com:yidahis/Reveal-SDK.git"
+    "git": "git@github.com:hanleylee/Reveal-SDK.git"
   },
   "platforms": {
-    "ios": "8.0",
-    "tvos": "9.0"
+    "ios": "8.0"
   },
   "requires_arc": false,
   "compiler_flags": "-ObjC",
@@ -24,7 +23,7 @@
   ],
   "libraries": "z",
   "ios": {
-    "vendored_frameworks": "RevealServer/Framework/RevealServer.framework"
+    "vendored_frameworks": "Reveal-SDK/Framework/RevealServer.framework"
   },
   "xcconfig": {
     "LD_RUNPATH_SEARCH_PATHS": "$(inherited) @executable_path/Frameworks @loader_path/Frameworks"
